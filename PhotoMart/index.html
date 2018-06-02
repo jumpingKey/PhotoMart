@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>星云图片著作权登记查询平台</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/buttons.css" type="text/css" media="all" />
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/script.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+	<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	
+
+	<script type="text/javascript" src="./dist/nebulas.js"></script>
+	<script type="text/javascript" src="./dist/nebPay.js"></script>
+
+	<link rel="stylesheet" href="dist/remodal.css">
+	<link rel="stylesheet" href="dist/remodal-default-theme.css">
+
+</head>
+<body>
+<a href="#modal">
+<button id="upload_image" class="button button-royal button-circle button-giant"><i class="fa fa-plus"></i></button>
+</a>
+   	<div class="container">
+			<header class="clearfix">
+				<div class="header">
+				<div class="wrap">
+					 <div class="logo">
+	    		 	<a href="index.html"><h1>Photo Mart</h1></a>
+					</div>
+		           <div class="header_top">
+	    	</div>				
+			<div class="clear"></div>
+	    </div>
+			</div>
+			</header>
+			<div class="main">
+				<ul id="og-grid" class="og-grid">
+					
+				</ul>
+			</div>
+		</div><!-- /container -->
+	<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc" style="max-width: 50%;">
+		<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+		<h1>上传你的图片(请勿上传非原创作品)</h1>
+		<div class="upload-image-box">
+			<div style="width: 70%;margin-top: 10px; " >
+				<div id="wrapper">
+					<div id="image-holder" style="min-height: 250px;"> </div>
+					<input id="fileUpload" type="file" accept="image/jpeg,image/jpg,image/png" style="text-align: center"
+					class=""/><br />
+				</div>
+				<div style="margin:10px 0px 10px 0;text-align: left;">
+					<label >价格（Nas)：</label>
+					<input class="upload-price" required="required"></input>
+				</div>
+			</div>
+			<div class="upload-image-box-left" style="width: 50%;display: none;" >
+					<div>
+						<label>登记时间：</label>
+						<label class="upload-datetime"></label>
+					</div>
+					<div>
+						<label>作者：</label>
+						<label class="upload-author"></label>
+					</div>
+					<div>
+						<label>图片ID：</label>
+						<label class="upload-id" style="font-size: 12px;"></label>
+					</div>
+					<div>
+						<label>图片价格：</label>
+						<input class="upload-price" required="required"></input>
+					</div>
+			</div>
+		</div>
+		<br>
+		<!--button data-remodal-action="cancel" class="remodal-cancel">取消</button-->
+		<a id="confirm"  class="button button-block button-rounded button-primary button-large">上传</a>
+	</div>
+
+	<script src="js/grid.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.js"></script>
+	<script src="dist/remodal.js"></script>
+	<!-- 存储服务 -->
+	<script src="js/av-min.js"></script>
+
+	<script>
+        // 存储服务
+        var { Query, User } = AV;
+        AV.init('miaTRMdU7c2D7Jzzs5OAnTt3-gzGzoHsz', 'nFgGOjSIMALRRW3WudwPGQ3K');
+        //var data = { base64: '6K+077yM5L2g5Li65LuA5LmI6KaB56C06Kej5oiR77yf' };
+        //var file = new AV.File('resume.txt', data);
+        //file.save();
+
+
+	</script>
+	              <div class="copy_right">
+						<p>All Rights Reseverd | Design by  FireFrog</p>
+		   		</div>
+</body>
+</html>
